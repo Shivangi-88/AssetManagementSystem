@@ -1,11 +1,37 @@
 @inherits LayoutComponentBase
 
-<div class="d-flex" style="height:100vh;">
-    <!-- Sidebar -->
-    <NavMenu />
+<PageTitle>Asset Management System</PageTitle>
 
-    <!-- Main content -->
-    <div class="flex-grow-1 p-3">
-        @Body
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
     </div>
+
+    <main>
+        <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
 </div>
+
+<style>
+.page {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #1e1e2f;
+    color: white;
+}
+
+.content {
+    background: #f8f9fa;
+    padding: 1rem;
+}
+</style>

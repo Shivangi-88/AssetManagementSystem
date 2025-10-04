@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+// Add services
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
-// Register DbContext (AppDbContext)
+// Register DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -25,18 +25,22 @@ using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     db.Database.Migrate();
-    SeedData.Initialize(db); // Ensure SeedData expects AppDbContext
+    SeedData.Initialize(db);
 }
 
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
+    app.UseHsts();
 }
 
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+// Blazor Server endpoints
 app.MapBlazorHub();
-app.MapFallbackToPage("/_Host");
+app.MapFallbackToPage("/_Host"); // Must exist
+app.MapRazorPages();
 
 app.Run();

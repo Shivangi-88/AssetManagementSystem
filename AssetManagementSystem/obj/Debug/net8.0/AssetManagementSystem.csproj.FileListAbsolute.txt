@@ -150,3 +150,5 @@ C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debu
 C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.pdb
 C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.genruntimeconfig.cache
 C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\ref\AssetManagementSystem.dll
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.RazorAssemblyInfo.cache
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.RazorAssemblyInfo.cs
