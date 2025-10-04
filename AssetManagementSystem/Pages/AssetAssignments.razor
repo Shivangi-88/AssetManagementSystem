@@ -1,0 +1,125 @@
+﻿@page "/assignments"
+@inject IAssignmentService AssignmentService
+@inject IEmployeeService EmployeeService
+@inject IAssetService AssetService
+@inject NavigationManager NavigationManager
+@using AssetManagementSystem.Models
+
+<h3>Asset Assignments</h3>
+
+<button class="btn btn-primary mb-3" @onclick="ShowAssignForm">Assign Asset</button>
+
+@if (ShowForm)
+{
+    <div class="card mb-3 p-3">
+        <h5>New Asset Assignment</h5>
+        <div class="mb-2">
+            <label>Asset:</label>
+            <select class="form-select" @bind="SelectedAssetId">
+                <option value="">-- Select Asset --</option>
+                @foreach (var asset in AvailableAssets)
+                {
+                    <option value="@asset.Id">@asset.Name</option>
+                }
+            </select>
+        </div>
+        <div class="mb-2">
+            <label>Employee:</label>
+            <select class="form-select" @bind="SelectedEmployeeId">
+                <option value="">-- Select Employee --</option>
+                @foreach (var emp in Employees)
+                {
+                    <option value="@emp.Id">@emp.Name</option>
+                }
+            </select>
+        </div>
+        <div class="mb-2">
+            <label>Notes:</label>
+            <input class="form-control" @bind="Notes" placeholder="Optional notes" />
+        </div>
+        <button class="btn btn-success me-2" @onclick="AssignAsset">Assign</button>
+        <button class="btn btn-secondary" @onclick="CancelAssign">Cancel</button>
+    </div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Asset</th>
+            <th>Employee</th>
+            <th>Assigned Date</th>
+            <th>Returned Date</th>
+            <th>Notes</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var assignment in Assignments)
+        {
+            <tr>
+                <td>@assignment.Asset?.Name</td>
+                <td>@assignment.Employee?.Name</td>
+                <td>@assignment.AssignedDate.ToString("g")</td>
+                <td>@assignment.ReturnedDate?.ToString("g")</td>
+                <td>@assignment.Notes</td>
+                <td>
+                    @if (assignment.ReturnedDate == null)
+                    {
+                        <button class="btn btn-sm btn-success" @onclick="() => Return(assignment.Id)">Return</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<Assignment> Assignments = new();
+    private List<Employee> Employees = new();
+    private List<Asset> AvailableAssets = new();
+
+    private int SelectedAssetId { get; set; }
+    private int SelectedEmployeeId { get; set; }
+    private string Notes { get; set; }
+    private bool ShowForm { get; set; } = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        Assignments = (await AssignmentService.GetAllAssignmentsAsync()).ToList();
+        Employees = (await EmployeeService.GetAllEmployeesAsync()).ToList();
+        AvailableAssets = (await AssetService.GetAvailableAssetsAsync()).ToList();
+    }
+
+    private void ShowAssignForm() => ShowForm = true;
+    private void CancelAssign()
+    {
+        ShowForm = false;
+        SelectedAssetId = 0;
+        SelectedEmployeeId = 0;
+        Notes = string.Empty;
+    }
+
+    private async Task AssignAsset()
+    {
+        if (SelectedAssetId == 0 || SelectedEmployeeId == 0)
+        {
+            // optionally show validation message
+            return;
+        }
+
+        await AssignmentService.AssignAssetAsync(SelectedAssetId, SelectedEmployeeId, Notes ?? string.Empty);
+        await LoadData();
+        CancelAssign();
+    }
+
+    private async Task Return(int id)
+    {
+        await AssignmentService.ReturnAssetAsync(id, "Returned via UI");
+        await LoadData();
+    }
+}

@@ -1,0 +1,7 @@
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.csproj.AssemblyReference.cache
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.AssemblyInfoInputs.cache
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.AssemblyInfo.cs
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\AssetManagementSystem.MvcApplicationPartsAssemblyInfo.cache

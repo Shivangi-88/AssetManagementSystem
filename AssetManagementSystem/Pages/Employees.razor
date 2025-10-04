@@ -1,0 +1,58 @@
+﻿@page "/employees"
+@inject IEmployeeService EmployeeService
+@inject NavigationManager NavigationManager
+@using AssetManagementSystem.Models
+
+<h3>Employees</h3>
+
+<button class="btn btn-primary" @onclick="AddNew">Add Employee</button>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Designation</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in EmployeeList)
+        {
+            <tr>
+                <td>@emp.Name</td>
+                <td>@emp.Department</td>
+                <td>@emp.Email</td>
+                <td>@emp.PhoneNumber</td>
+                <td>@emp.Designation</td>
+                <td>@emp.Status</td>
+                <td>
+                    <button class="btn btn-sm btn-warning" @onclick="() => Edit(emp.Id)">Edit</button>
+                    <button class="btn btn-sm btn-danger" @onclick="() => Delete(emp.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<Employee> EmployeeList = new(); // renamed from Employees
+
+    protected override async Task OnInitializedAsync()
+    {
+        EmployeeList = (await EmployeeService.GetAllEmployeesAsync()).ToList();
+    }
+
+    void AddNew() => NavigationManager.NavigateTo("/employees/edit/0");
+    void Edit(int id) => NavigationManager.NavigateTo($"/employees/edit/{id}");
+
+    async Task Delete(int id)
+    {
+        await EmployeeService.DeleteEmployeeAsync(id);
+        EmployeeList = (await EmployeeService.GetAllEmployeesAsync()).ToList();
+    }
+}
+

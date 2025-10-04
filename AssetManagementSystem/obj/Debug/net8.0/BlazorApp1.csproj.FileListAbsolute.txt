@@ -1,0 +1,7 @@
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\ritas\source\repos\AssetManagementSystem\AssetManagementSystem\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache

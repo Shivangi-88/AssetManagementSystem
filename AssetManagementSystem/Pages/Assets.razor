@@ -1,0 +1,59 @@
+﻿@page "/assets"
+@inject IAssetService AssetService
+@inject NavigationManager NavigationManager
+@using AssetManagementSystem.Models
+@using AssetManagementSystem.Services
+@using AssetManagementSystem.Data
+
+<h3>Assets</h3>
+
+<button class="btn btn-primary" @onclick="AddNew">Add Asset</button>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Make/Model</th>
+            <th>Serial Number</th>
+            <th>Status</th>
+            <th>Is Spare</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asset in assetList)
+        {
+            <tr>
+                <td>@asset.Name</td>
+                <td>@asset.Type</td>
+                <td>@asset.MakeModel</td>
+                <td>@asset.SerialNumber</td>
+                <td>@asset.Status</td>
+                <td>@(asset.IsSpare ? "Yes" : "No")</td>
+                <td>
+                    <button class="btn btn-sm btn-warning" @onclick="() => Edit(asset.Id)">Edit</button>
+                    <button class="btn btn-sm btn-danger" @onclick="() => Delete(asset.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<Asset> assetList = new(); // Renamed to avoid conflict with page class
+
+    protected override async Task OnInitializedAsync()
+    {
+        assetList = (await AssetService.GetAllAssetsAsync()).ToList();
+    }
+
+    void AddNew() => NavigationManager.NavigateTo("/assets/edit/0");
+    void Edit(int id) => NavigationManager.NavigateTo($"/assets/edit/{id}");
+
+    async Task Delete(int id)
+    {
+        await AssetService.DeleteAssetAsync(id);
+        assetList = (await AssetService.GetAllAssetsAsync()).ToList();
+    }
+}

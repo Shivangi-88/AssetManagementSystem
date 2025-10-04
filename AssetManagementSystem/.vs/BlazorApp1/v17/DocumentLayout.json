@@ -1,0 +1,250 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\blazorapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\blazorapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\pages\\assets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\pages\\assets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\data\\models\\assetassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\data\\models\\assetassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\data\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\data\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\data\\models\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\data\\models\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\data\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\data\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\pages\\assignments.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\pages\\assignments.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\pages\\assetedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\pages\\assetedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\pages\\employeeedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\pages\\employeeedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\pages\\employees.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\pages\\employees.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ritas\\source\\repos\\blazorapp1\\blazorapp1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9D907E16-CD1B-4694-95B8-6970BC932A2F}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Assignments.razor",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\Assignments.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Pages\\Assignments.razor",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\Assignments.razor",
+              "RelativeToolTip": "BlazorApp1\\Pages\\Assignments.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T10:43:23.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AssetEdit.razor",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\AssetEdit.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Pages\\AssetEdit.razor",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\AssetEdit.razor",
+              "RelativeToolTip": "BlazorApp1\\Pages\\AssetEdit.razor",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAQwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T10:42:16.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assets.razor",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\Assets.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Pages\\Assets.razor",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\Assets.razor",
+              "RelativeToolTip": "BlazorApp1\\Pages\\Assets.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T10:40:50.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmployeeEdit.razor",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\EmployeeEdit.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Pages\\EmployeeEdit.razor",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\EmployeeEdit.razor",
+              "RelativeToolTip": "BlazorApp1\\Pages\\EmployeeEdit.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T10:39:36.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\Data\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\Models\\Employee.cs",
+              "RelativeToolTip": "BlazorApp1\\Data\\Models\\Employee.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T14:10:32.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Asset.cs",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\Models\\Asset.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\Data\\Models\\Asset.cs",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\Models\\Asset.cs",
+              "RelativeToolTip": "BlazorApp1\\Data\\Models\\Asset.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T14:11:06.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\Data\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "BlazorApp1\\Data\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T14:12:33.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlazorApp1.csproj",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+              "RelativeDocumentMoniker": "BlazorApp1\\BlazorApp1.csproj",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+              "RelativeToolTip": "BlazorApp1\\BlazorApp1.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-29T14:02:19.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AssetAssignment.cs",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\Models\\AssetAssignment.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\Data\\Models\\AssetAssignment.cs",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\Models\\AssetAssignment.cs",
+              "RelativeToolTip": "BlazorApp1\\Data\\Models\\AssetAssignment.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T14:12:01.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Employees.razor",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\Employees.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Pages\\Employees.razor",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Pages\\Employees.razor",
+              "RelativeToolTip": "BlazorApp1\\Pages\\Employees.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T10:38:32.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Program.cs",
+              "RelativeToolTip": "BlazorApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:29:20.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\SeedData.cs",
+              "RelativeToolTip": "BlazorApp1\\Data\\SeedData.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:25:17.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BlazorApp1\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T14:25:20.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\appsettings.json",
+              "RelativeDocumentMoniker": "BlazorApp1\\appsettings.json",
+              "ToolTip": "C:\\Users\\ritas\\source\\repos\\BlazorApp1\\BlazorApp1\\appsettings.json",
+              "RelativeToolTip": "BlazorApp1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-29T13:44:47.045Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

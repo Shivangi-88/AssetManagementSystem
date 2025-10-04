@@ -1,0 +1,73 @@
+﻿@page "/assignments/assign"
+@inject IAssignmentService AssignmentService
+@inject IEmployeeService EmployeeService
+@inject IAssetService AssetService
+@inject NavigationManager NavigationManager
+@using AssetManagementSystem.Models
+
+<h3>Assign Asset</h3>
+
+<EditForm Model="assignmentModel" OnValidSubmit="HandleAssignAsset">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <!-- Employee Dropdown -->
+    <div class="mb-3">
+        <label>Employee</label>
+        <InputSelect class="form-control" @bind-Value="assignmentModel.EmployeeId" TValue="int">
+            <option value="">Select Employee</option>
+            @foreach (var emp in employees)
+            {
+                <option value="@emp.Id">@emp.Name</option>
+            }
+        </InputSelect>
+    </div>
+
+    <!-- Asset Dropdown -->
+    <div class="mb-3">
+        <label>Asset</label>
+        <InputSelect class="form-control" @bind-Value="assignmentModel.AssetId" TValue="int">
+            <option value="">Select Asset</option>
+            @foreach (var asset in assets)
+            {
+                <option value="@asset.Id">@asset.Name</option>
+            }
+        </InputSelect>
+    </div>
+
+    <!-- Notes -->
+    <div class="mb-3">
+        <label>Notes</label>
+        <InputTextArea class="form-control" @bind-Value="assignmentModel.Notes" />
+    </div>
+
+    <!-- Buttons -->
+    <button class="btn btn-primary" type="submit">Assign</button>
+    <button class="btn btn-secondary ms-2" type="button" @onclick="Cancel">Cancel</button>
+</EditForm>
+
+@code {
+    // ✅ variables renamed to avoid conflicts
+    private Assignment assignmentModel = new();
+    private List<Employee> employees = new();
+    private List<Asset> assets = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        employees = (await EmployeeService.GetAllEmployeesAsync()).ToList();
+        assets = (await AssetService.GetAvailableAssetsAsync()).ToList();
+    }
+
+    // ✅ renamed to avoid conflict with component name
+    private async Task HandleAssignAsset()
+    {
+        await AssignmentService.AssignAssetAsync(
+            assignmentModel.AssetId, 
+            assignmentModel.EmployeeId, 
+            assignmentModel.Notes
+        );
+        NavigationManager.NavigateTo("/assignments");
+    }
+
+    private void Cancel() => NavigationManager.NavigateTo("/assignments");
+}
