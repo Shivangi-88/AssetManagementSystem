@@ -1,0 +1,22 @@
+# Visual Studio cache
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# Debug/Release folders
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# Temporary files
+*.log
+*.tmp
+
+# Other
+*.swp
+*.DS_Store

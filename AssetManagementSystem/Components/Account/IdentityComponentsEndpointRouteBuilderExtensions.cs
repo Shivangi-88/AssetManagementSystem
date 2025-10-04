@@ -1,5 +1,7 @@
 using System.Security.Claims;
 using System.Text.Json;
+using AssetManagementSystem.Models;
+
 using AssetManagementSystem.Components.Account.Pages;
 using AssetManagementSystem.Components.Account.Pages.Manage;
 using AssetManagementSystem.Data;

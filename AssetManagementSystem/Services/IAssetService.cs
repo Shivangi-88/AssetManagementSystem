@@ -16,5 +16,8 @@ namespace AssetManagementSystem.Services
         Task<IEnumerable<Asset>> GetAssetsByTypeAsync(string type);
         Task<IEnumerable<Asset>> GetAssetsByStatusAsync(string status);
         Task<IEnumerable<Asset>> GetAssetsAssignedToEmployeeAsync(int employeeId);
+
+        // Get all available assets
+        Task<IEnumerable<Asset>> GetAvailableAssetsAsync();
     }
 }

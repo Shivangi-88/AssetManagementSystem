@@ -8,7 +8,7 @@ namespace AssetManagementSystem.Models
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; } = string.Empty;  // Asset name / Make & Model
+        public string Name { get; set; } = string.Empty;  // Asset name
 
         [Required]
         public string Type { get; set; } = string.Empty;  // Asset type
@@ -20,8 +20,13 @@ namespace AssetManagementSystem.Models
 
         public string Specifications { get; set; } = string.Empty;
 
+        // New properties to match Razor page
+        public string MakeModel { get; set; } = string.Empty;
+        public string SerialNumber { get; set; } = string.Empty;
+
         // Navigation property for assignments
         public ICollection<Assignment> Assignments { get; set; } = new List<Assignment>();
     }
 }
+
 

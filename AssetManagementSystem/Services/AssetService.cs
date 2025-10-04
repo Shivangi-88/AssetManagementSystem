@@ -50,7 +50,8 @@ namespace AssetManagementSystem.Services
 
         public async Task<IEnumerable<Asset>> GetAssetsByTypeAsync(string type)
         {
-            return await _context.Assets.Where(a => a.AssetType == type).ToListAsync();
+            // Updated to match your current Asset model property "Type"
+            return await _context.Assets.Where(a => a.Type == type).ToListAsync();
         }
 
         public async Task<IEnumerable<Asset>> GetAssetsByStatusAsync(string status)
@@ -63,6 +64,14 @@ namespace AssetManagementSystem.Services
             return await _context.Assignments
                 .Where(x => x.EmployeeId == employeeId && x.ReturnedDate == null)
                 .Select(x => x.Asset)
+                .ToListAsync();
+        }
+
+        // New method to get only available assets
+        public async Task<IEnumerable<Asset>> GetAvailableAssetsAsync()
+        {
+            return await _context.Assets
+                .Where(a => a.Status == "Available")
                 .ToListAsync();
         }
     }
