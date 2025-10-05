@@ -1,0 +1,84 @@
+@page "/assets/edit/{AssetId:int}"
+@inject IAssetService AssetService
+@inject NavigationManager NavigationManager
+@using AssetManagementSystem.Models
+@using System.ComponentModel.DataAnnotations
+
+<h3>@(AssetId == 0 ? "Add Asset" : "Edit Asset")</h3>
+
+<EditForm Model="AssetModel" OnValidSubmit="SaveAsset">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label>Name</label>
+        <InputText class="form-control" @bind-Value="AssetModel.Name" />
+    </div>
+
+    <div class="mb-3">
+        <label>Type</label>
+        <InputText class="form-control" @bind-Value="AssetModel.Type" />
+    </div>
+
+    <div class="mb-3">
+        <label>Make / Model</label>
+        <InputText class="form-control" @bind-Value="AssetModel.MakeModel" />
+    </div>
+
+    <div class="mb-3">
+        <label>Serial Number</label>
+        <InputText class="form-control" @bind-Value="AssetModel.SerialNumber" />
+    </div>
+
+    <div class="mb-3">
+        <label>Status</label>
+        <InputSelect class="form-control" @bind-Value="AssetModel.Status" TValue="string">
+            <option value="Available">Available</option>
+            <option value="Assigned">Assigned</option>
+            <option value="Under Repair">Under Repair</option>
+            <option value="Retired">Retired</option>
+        </InputSelect>
+    </div>
+
+    <div class="mb-3">
+        <label>Is Spare</label>
+        <InputSelect class="form-control" @bind-Value="AssetModel.IsSpare" TValue="bool">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </InputSelect>
+    </div>
+
+    <div class="mb-3">
+        <label>Specifications / Details</label>
+        <InputTextArea class="form-control" @bind-Value="AssetModel.Specifications" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">Save</button>
+    <button class="btn btn-secondary ms-2" @onclick="Cancel">Cancel</button>
+</EditForm>
+
+@code {
+    [Parameter] public int AssetId { get; set; }
+    private Asset AssetModel = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (AssetId != 0)
+        {
+            AssetModel = await AssetService.GetAssetByIdAsync(AssetId);
+        }
+    }
+
+    async Task SaveAsset()
+    {
+        if (AssetId == 0)
+            await AssetService.AddAssetAsync(AssetModel);
+        else
+            await AssetService.UpdateAssetAsync(AssetModel);
+
+        NavigationManager.NavigateTo("/assets");
+    }
+
+    void Cancel() => NavigationManager.NavigateTo("/assets");
+}
+

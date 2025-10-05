@@ -1,0 +1,72 @@
+﻿@page "/dashboard"
+@inject IAssetService AssetService
+
+<h3>Dashboard</h3>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card text-center p-3 mb-3">
+            <h5>Total Assets</h5>
+            <h3>@TotalAssets</h3>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center p-3 mb-3">
+            <h5>Available Assets</h5>
+            <h3>@AvailableAssets</h3>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center p-3 mb-3">
+            <h5>Assigned Assets</h5>
+            <h3>@AssignedAssets</h3>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center p-3 mb-3">
+            <h5>Under Repair</h5>
+            <h3>@UnderRepairAssets</h3>
+        </div>
+    </div>
+</div>
+
+<h5>Assets by Type</h5>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var type in AssetsByType)
+        {
+            <tr>
+                <td>@type.Key</td>
+                <td>@type.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private int TotalAssets;
+    private int AvailableAssets;
+    private int AssignedAssets;
+    private int UnderRepairAssets;
+    private Dictionary<string, int> AssetsByType = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var assets = (await AssetService.GetAllAssetsAsync()).ToList();
+        TotalAssets = assets.Count;
+        AvailableAssets = assets.Count(a => a.Status == "Available");
+        AssignedAssets = assets.Count(a => a.Status == "Assigned");
+        UnderRepairAssets = assets.Count(a => a.Status == "Under Repair");
+
+        AssetsByType = assets
+            .GroupBy(a => a.Type)
+            .ToDictionary(g => g.Key, g => g.Count());
+    }
+}
+
